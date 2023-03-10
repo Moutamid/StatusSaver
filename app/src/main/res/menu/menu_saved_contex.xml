@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/check_all"
+        android:icon="@drawable/ic_check_all"
+        android:title="@string/check_all"
+        app:showAsAction="ifRoom"/>
+
+    <item
+        android:id="@+id/share"
+        android:icon="@drawable/ic_share_menu"
+        android:title="@string/share_status"
+        app:showAsAction="ifRoom" />
+
+    <item
+        android:id="@+id/delete"
+        android:icon="@drawable/ic_delete"
+        android:title="@string/delete"
+        app:showAsAction="ifRoom" />
+
+</menu>

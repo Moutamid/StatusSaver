@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/openApp"
+        android:icon="@drawable/ic_whatsapp_color"
+        android:title="@string/open_app"
+        app:showAsAction="always" />
+
+    <item
+        android:id="@+id/moreApp"
+        android:icon="@drawable/ic_manage_account_icon"
+        android:title="@string/select_app"
+        app:showAsAction="ifRoom">
+
+        <menu>
+            <group
+                android:id="@+id/optionMenu"
+                android:checkableBehavior="single">
+                <item
+                    android:id="@+id/whatsapp"
+                    android:checked="true"
+                    android:title="@string/whatsapp" />
+                <item
+                    android:id="@+id/whatsapp4b"
+                    android:title="@string/whatsapp_business" />
+            </group>
+        </menu>
+    </item>
+</menu>

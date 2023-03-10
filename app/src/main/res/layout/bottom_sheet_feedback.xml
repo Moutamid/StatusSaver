@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/feedback_root_layout"
+    android:background="@android:color/transparent">
+
+    <LinearLayout
+        android:id="@+id/client_layout"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_marginTop="28dp"
+        android:background="#DC3C32"
+        android:gravity="center_vertical"
+        android:orientation="vertical"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="-10dp"
+            android:text="@string/email_handler"
+            android:textColor="#D9FFFFFF"
+            android:textSize="12sp"
+            android:textStyle="italic" />
+
+        <Spinner
+            android:id="@+id/email_client"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:background="@android:color/transparent" />
+    </LinearLayout>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fab_send"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="15dp"
+        app:backgroundTint="@android:color/white"
+        app:borderWidth="0dp"
+        app:elevation="5dp"
+        app:layout_constraintBottom_toTopOf="@+id/client_layout"
+        app:layout_constraintEnd_toEndOf="@id/client_layout"
+        app:layout_constraintTop_toTopOf="@+id/client_layout"
+        app:srcCompat="@drawable/ic_send" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/white"
+        android:orientation="vertical"
+        android:gravity="center_vertical"
+        app:layout_constraintTop_toBottomOf="@+id/client_layout">
+
+        <RadioGroup
+            android:id="@+id/radio_group"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:paddingStart="10dp"
+            android:paddingEnd="0dp"
+            android:weightSum="7">
+
+            <RadioButton
+                android:id="@+id/impressed"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:checked="true"
+                android:text="@string/impressed" />
+
+            <RadioButton
+                android:id="@+id/not_impressed"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="3"
+                android:paddingStart="5dp"
+                android:paddingEnd="0dp"
+                android:text="@string/not_impressed" />
+
+            <RadioButton
+                android:id="@+id/not_sure"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:text="@string/not_sure" />
+        </RadioGroup>
+
+        <EditText
+            android:id="@+id/et_feedback"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="20dp"
+            android:autofillHints=""
+            android:background="#E3E3E3"
+            android:gravity="start"
+            android:hint="@string/feedback_hint"
+            android:inputType="textMultiLine"
+            android:maxLines="5"
+            android:padding="10dp"
+            android:textColor="@android:color/black"/>
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

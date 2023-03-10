@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#6200EE</color>
+    <color name="colorPrimaryDark">#3700B3</color>
+    <color name="colorAccent">#03DAC5</color>
+
+    <color name="myPrimaryColor">#1AA900</color>
+    <color name="myPrimaryColorDark">#137D00</color>
+    <color name="myPrimaryColorTransparent">#781AA900</color>
+    <color name="tabRippleColor">#12000000</color>
+    <color name="myColorBlack">#2A2A2A</color>
+    <color name="myAccentColor">#FF1F5F</color>
+    <color name="fabWhatsAppColor">#CFFFC8</color>
+    <color name="customGreenColor">#4AC138</color>
+    <color name="whiteTransparent">#50FFFFFF</color>
+    <color name="lite_gray">#C0C0C0</color>
+    <color name="white">#FFFFFF</color>
+    <color name="black">#000000</color>
+    <color name="blackTransparent">#80000000</color>
+    <color name="greyTransparent">#66555555</color>
+    <color name="adButton">#4285F4</color>
+</resources>

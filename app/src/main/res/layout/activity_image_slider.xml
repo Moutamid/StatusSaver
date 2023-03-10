@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/background_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/black"
+    tools:context=".ImageSliderActivity">
+
+    <androidx.viewpager2.widget.ViewPager2
+        android:id="@+id/viewpager_image_slider"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerInParent="true" />
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar_image"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:background="@android:color/transparent"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <ImageButton
+            android:id="@+id/btn_expand"
+            android:layout_width="40dp"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/button_layout"
+            android:background="@android:color/transparent"
+            android:contentDescription="@string/expand_or_collapse"
+            android:src="@drawable/ic_arrow_up"
+            android:visibility="gone" />
+
+        <LinearLayout
+            android:id="@+id/button_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="10dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:visibility="gone">
+
+            <ImageButton
+                android:id="@+id/ib_share"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:layout_marginStart="0dp"
+                android:layout_marginEnd="30dp"
+                android:background="@drawable/circle_black_no_border"
+                android:contentDescription="@string/share_status"
+                android:paddingStart="-2dp"
+                android:paddingEnd="0dp"
+                android:src="@drawable/ic_share"
+                app:tint="@color/white" />
+
+            <ImageButton
+                android:id="@+id/ib_download"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center"
+                android:background="@drawable/green_circle_bg"
+                android:contentDescription="@string/download"
+                android:src="@drawable/ic_file_download"
+                app:tint="@color/white" />
+
+            <ImageButton
+                android:id="@+id/ib_delete"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center"
+                android:background="@drawable/red_circle_bg"
+                android:contentDescription="@string/delete"
+                android:src="@drawable/ic_delete"
+                android:visibility="gone"
+                app:tint="@color/white" />
+
+            <ImageButton
+                android:id="@+id/ib_wa_share"
+                android:layout_width="35dp"
+                android:layout_height="34dp"
+                android:layout_marginStart="30dp"
+                android:layout_marginEnd="0dp"
+                android:background="@drawable/circle_black_no_border"
+                android:contentDescription="@string/wa_share"
+                android:src="@drawable/ic_whatsapp_share"
+                app:tint="@color/white" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:gravity="end"
+            android:orientation="vertical">
+
+            <com.google.android.material.floatingactionbutton.FloatingActionButton
+                android:id="@+id/fab_wa_share"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:contentDescription="@string/app_name"
+                app:backgroundTint="@color/greyTransparent"
+                app:fabSize="mini"
+                app:elevation="0dp"
+                app:srcCompat="@drawable/ic_whatsapp"
+                app:tint="@color/white" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <com.google.android.material.floatingactionbutton.FloatingActionButton
+                    android:id="@+id/fab_share"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:contentDescription="@string/app_name"
+                    app:backgroundTint="@color/greyTransparent"
+                    app:fabSize="mini"
+                    app:elevation="0dp"
+                    app:srcCompat="@drawable/ic_share"
+                    app:tint="@color/white" />
+
+                <com.google.android.material.floatingactionbutton.FloatingActionButton
+                    android:id="@+id/fab_download"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:contentDescription="@string/app_name"
+                    app:backgroundTint="@color/myPrimaryColor"
+                    app:fabSize="mini"
+                    app:elevation="0dp"
+                    app:srcCompat="@drawable/ic_arrow_download_1"
+                    app:tint="@color/fabWhatsAppColor" />
+
+                <com.google.android.material.floatingactionbutton.FloatingActionButton
+                    android:id="@+id/fab_delete"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:contentDescription="@string/app_name"
+                    android:visibility="gone"
+                    app:backgroundTint="@color/myPrimaryColor"
+                    app:fabSize="mini"
+                    app:elevation="0dp"
+                    app:srcCompat="@drawable/ic_delete"
+                    app:tint="@color/fabWhatsAppColor" />
+            </LinearLayout>
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

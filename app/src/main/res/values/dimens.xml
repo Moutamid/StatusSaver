@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="tab_text_size">6.5sp</dimen>
+    <dimen name="tab_selected_text_size">6.7sp</dimen>
+    <dimen name="small_text_size">11sp</dimen>
+    <dimen name="ad_header_text_size">15sp</dimen>
+</resources>

@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/orange_gradient_bg"
+    tools:context=".TextRepeaterActivity">
+
+    <ImageButton
+        android:id="@+id/btn_back"
+        android:layout_width="56dp"
+        android:layout_height="56dp"
+        android:layout_marginTop="24dp"
+        android:background="@android:color/transparent"
+        android:contentDescription="@string/app_name"
+        android:src="@drawable/ic_back"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ToggleButton
+        android:id="@+id/btn_space"
+        android:layout_width="100dp"
+        android:layout_height="30dp"
+        android:layout_marginEnd="10dp"
+        android:background="@drawable/bg_space"
+        android:textOff="@string/space"
+        android:textOn="@string/selected"
+        app:layout_constraintBottom_toBottomOf="@id/btn_back"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@id/btn_back" />
+
+    <ToggleButton
+        android:id="@+id/btn_line"
+        android:layout_width="100dp"
+        android:layout_height="30dp"
+        android:layout_marginEnd="10dp"
+        android:background="@drawable/bg_space"
+        android:textOff="@string/new_line"
+        android:textOn="@string/selected"
+        app:layout_constraintBottom_toBottomOf="@id/btn_back"
+        app:layout_constraintEnd_toStartOf="@+id/btn_space"
+        app:layout_constraintTop_toTopOf="@id/btn_back" />
+
+    <EditText
+        android:id="@+id/et_repeated_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:autofillHints=""
+        android:background="@android:color/transparent"
+        android:fontFamily="@font/roboto_medium"
+        android:hint="@string/ex_100"
+        android:imeOptions="actionNext"
+        android:includeFontPadding="false"
+        android:inputType="number"
+        android:maxLength="5"
+        android:textColor="#FFF174"
+        android:textColorHint="@color/whiteTransparent"
+        android:textSize="40sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_back" />
+
+    <EditText
+        android:id="@+id/et_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="16dp"
+        android:autofillHints=""
+        android:background="@android:color/transparent"
+        android:fontFamily="@font/roboto_medium"
+        android:hint="@string/i_really_miss_you"
+        android:includeFontPadding="false"
+        android:inputType="textMultiLine"
+        android:maxLines="2"
+        android:textColor="@android:color/white"
+        android:textColorHint="@color/whiteTransparent"
+        android:textSize="27sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/et_repeated_time" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/adViewContainerCard"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="16dp"
+        app:cardCornerRadius="5dp"
+        app:cardElevation="0dp"
+        app:layout_constraintTop_toBottomOf="@id/et_text">
+
+        <com.grapplications.statussaver.TemplateView
+            android:id="@+id/my_template"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="gone"
+            app:gnt_template_type="@layout/native_small_template" />
+
+    </androidx.cardview.widget.CardView>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="10dp"
+        android:scrollbars="none"
+        app:layout_constraintBottom_toTopOf="@+id/btnLayout"
+        app:layout_constraintTop_toBottomOf="@id/adViewContainerCard">
+
+        <TextView
+            android:id="@+id/tv_repeated_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/transparent"
+            android:fontFamily="@font/roboto_medium"
+            android:hint="@string/text_repeater_hint"
+            android:includeFontPadding="false"
+            android:textColor="@android:color/white"
+            android:textColorHint="@color/whiteTransparent"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+    </ScrollView>
+
+    <LinearLayout
+        android:id="@+id/btnLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btn_generate"
+            android:layout_width="0dp"
+            android:layout_height="46dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="20dp"
+            android:layout_weight="1"
+            android:insetTop="0dp"
+            android:insetBottom="0dp"
+            android:text="@string/generate"
+            android:textAllCaps="false"
+            android:textColor="@android:color/black"
+            app:backgroundTint="@android:color/white"
+            app:cornerRadius="23dp" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btn_clear"
+            android:layout_width="46dp"
+            android:layout_height="46dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="20dp"
+            android:insetTop="0dp"
+            android:insetBottom="0dp"
+            android:padding="8.5dp"
+            app:backgroundTint="@android:color/black"
+            app:cornerRadius="23dp"
+            app:icon="@drawable/ic_clear"
+            app:iconTint="@android:color/white" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btn_copy"
+            android:layout_width="46dp"
+            android:layout_height="46dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="20dp"
+            android:insetTop="0dp"
+            android:insetBottom="0dp"
+            android:padding="12dp"
+            app:backgroundTint="@android:color/black"
+            app:cornerRadius="23dp"
+            app:icon="@drawable/ic_copy"
+            app:iconTint="@android:color/white" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btn_share"
+            android:layout_width="46dp"
+            android:layout_height="46dp"
+            android:layout_marginBottom="20dp"
+            android:insetTop="0dp"
+            android:insetBottom="0dp"
+            android:padding="10dp"
+            app:backgroundTint="@android:color/black"
+            app:cornerRadius="23dp"
+            app:icon="@drawable/ic_share_menu"
+            app:iconTint="@android:color/white" />
+
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

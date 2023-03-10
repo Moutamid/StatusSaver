@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="165dp"
+    android:padding="1dp">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="158dp"
+        app:cardCornerRadius="2dp"
+        app:cardElevation="0dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#26574545"
+            android:orientation="vertical">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="130dp"
+                android:background="@color/white">
+
+                <ImageView
+                    android:id="@+id/rv_image"
+                    android:layout_width="match_parent"
+                    android:layout_height="130dp"
+                    android:background="#642D2D2D"
+                    android:contentDescription="@string/image_status"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <ImageView
+                    android:id="@+id/rv_videoIcon"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_gravity="center"
+                    android:background="@drawable/circle_white"
+                    android:contentDescription="@string/play_image"
+                    android:src="@drawable/ic_play"
+                    app:layout_constraintBottom_toBottomOf="@id/rv_image"
+                    app:layout_constraintEnd_toEndOf="@id/rv_image"
+                    app:layout_constraintStart_toStartOf="@id/rv_image"
+                    app:layout_constraintTop_toTopOf="@id/rv_image" />
+
+                <View
+                    android:id="@+id/rv_select_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="#A0000000"
+                    android:visibility="gone" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <LinearLayout
+                android:id="@+id/layout_button"
+                android:layout_width="match_parent"
+                android:layout_height="25dp"
+                android:layout_marginBottom="0.5dp"
+                android:layout_marginTop="2dp"
+                android:background="#F1F1F1"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageButton
+                    android:id="@+id/rv_download"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@android:color/transparent"
+                    android:contentDescription="@string/download"
+                    android:src="@drawable/ic_download"
+                    app:tint="@color/black"
+                    android:visibility="gone"/>
+
+                <ImageView
+                    android:id="@+id/rv_check"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/myPrimaryColor"
+                    android:contentDescription="@string/status_downloaded"
+                    android:src="@drawable/ic_check"
+                    app:tint="@color/white"
+                    android:visibility="gone"/>
+
+                <ImageButton
+                    android:id="@+id/rv_share"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@android:color/transparent"
+                    android:contentDescription="@string/wa_share"
+                    android:src="@drawable/ic_share_grid"
+                    app:tint="@color/myPrimaryColor" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+</RelativeLayout>

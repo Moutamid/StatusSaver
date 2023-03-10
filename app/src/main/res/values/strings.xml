@@ -1,0 +1,119 @@
+<resources>
+    <string name="app_name">GR Status Saver</string>
+    <string name="cool_features">Cool features</string>
+    <string name="whats_direct">Whats direct</string>
+    <string name="how_to_use">How to use</string>
+    <string name="feedback">Feedback</string>
+    <string name="rate_us">Rate us</string>
+    <string name="share_this_app">Share this app</string>
+    <string name="more_apps">More apps</string>
+    <string name="exit">Exit</string>
+    <string name="check_all">Check all</string>
+    <string name="delete">Delete status</string>
+    <string name="download">Download status</string>
+    <string name="share_status">Share status</string>
+    <string name="wa_share">Share on WhatsApp</string>
+    <string name="permission_note">We need your permission to show all saved statuses</string>
+    <string name="permission_note_2">You have to give access \".Statuses\" directory to show you all statuses</string>
+    <string name="allow">Allow</string>
+    <string name="privacy_policies">Privacy policies</string>
+    <string name="this_is_our">This is our</string>
+    <string name="no_saved_status_found">No saved status found</string>
+    <string name="for_whatsapp">for WhatsApp</string>
+    <string name="play_n_pause">Play n Pause</string>
+    <string name="whatsdirect">whatsdirect</string>
+    <string name="whats_direct_desc">Now you can send message to any unsaved WhatsApp number</string>
+    <string name="country_flag">Country flag</string>
+    <string name="india">India</string>
+    <string name="plus">+</string>
+    <string name="_91">91</string>
+    <string name="whatsapp_number">WhatsApp Number…</string>
+    <string name="open_chat">Open Chat</string>
+    <string name="exit_quote">Tap here to exit</string>
+    <string name="yes">Yes</string>
+    <string name="email_handler">Email handler</string>
+    <string name="impressed">Impressed</string>
+    <string name="not_impressed">Not impressed</string>
+    <string name="not_sure">Not sure</string>
+    <string name="feedback_hint">Please give your valuable feedback…</string>
+    <string name="close">Close</string>
+    <string name="no_status_found">No status found</string>
+    <string name="open_whatsapp">- Open WhatsApp</string>
+    <string name="open_wa_business">- Open WA Business</string>
+    <string name="watch_status">- Watch status</string>
+    <string name="come_back_to_this_app">- Come back to this app</string>
+    <string name="image_status">Image status</string>
+    <string name="_00_00">00:00</string>
+    <string name="play_image">Play image</string>
+    <string name="status_downloaded">Status downloaded</string>
+    <string name="advertiser_logo">Advertiser logo</string>
+    <string name="ad">Ad</string>
+    <string name="ad_headline">Ad headline</string>
+    <string name="ad_body">This is body of this advertisement.</string>
+    <string name="install">Install</string>
+    <string name="nav_header_image">Nav header image</string>
+    <string name="x">X</string>
+    <string name="rate_image">Rate image</string>
+    <string name="rate_quote">Yay! Mind Giving Us A\n5 Star Rating On Play Store?</string>
+    <string name="rate_now">Rate now</string>
+    <string name="not_now">Not now</string>
+    <string name="i_v_done">I\'v done</string>
+    <string name="text">Text</string>
+    <string name="repeater">Repeater</string>
+    <string name="text_repeater_note">Repeat any word, sentence or emoji up to 10000 times</string>
+    <string name="your_text">Your text…</string>
+    <string name="text_repeater_hint">Repeated text will appear here…</string>
+    <string name="send_text">Send text</string>
+    <string name="copy_text">Copy text</string>
+    <string name="repeated_time">Repeating time</string>
+    <string name="new_line">New line</string>
+    <string name="text_repeater">Text repeater</string>
+    <string name="generate">Generate</string>
+    <string name="clear_text_box">Clear text box</string>
+    <string name="video_will_appear_soon">Video will appear soon</string>
+    <string name="powered_by">Powered by</string>
+    <string name="youtube">Youtube</string>
+    <string name="please_wait">Please wait…</string>
+    <string name="downloading">Downloading…</string>
+    <string name="add_new_line">new line</string>
+    <string name="add_space">extra space</string>
+    <string name="set_as_wallpaper">Set as Wallpaper</string>
+    <string name="expand_or_collapse">expand or collaps</string>
+    <string name="version">Version 1.2</string>
+    <string name="whatsapp_no">WhatsApp no</string>
+    <string name="ex_100">Ex. 100</string>
+    <string name="i_really_miss_you">I really miss you</string>
+    <string name="space">space</string>
+    <string name="selected">selected</string>
+    <string name="open_app">Open App</string>
+    <string name="select_app">Select App</string>
+    <string name="whatsapp">WhatsApp</string>
+    <string name="whatsapp_business">WhatsApp Business</string>
+    <string name="whatsapp_status">WhatsApp Status</string>
+    <string name="whatsapp_business_status">WA Business Status</string>
+
+    <string name="go_to_the_folder">- Go to \".Statuses\" folder</string>
+    <string name="allow_access_folder">- Select \"USE THIS FOLDER\"</string>
+    <string name="grant_permission">Grant Permission</string>
+    <string name="app_not_working_click_here">App not working? Click here</string>
+    <string name="if_app_is_not_working">If App is not working</string>
+    <string name="_1_go_to_app_settings_storage">1. Go to App Settings > Storage</string>
+    <string name="_2_clear_cache_amp_clear_data">2. Clear cache &amp; Clear data</string>
+    <string name="_3_open_app_again">3. Open app again</string>
+    <string name="open_app_settings">Open app settings</string>
+    <string name="how_to_use_the_app">How to use the app</string>
+
+    <string name="admob_demo_app_id">ca-app-pub-3940256099942544~3347511713</string>
+    <string name="admob_real_app_id">ca-app-pub-3689467985437081~4008477012</string>
+    <string name="admob_app_id">@string/admob_real_app_id</string>
+    <string name="permission">Permission</string>
+
+    <string-array name="email_handlers">
+        <item>Gmail</item>
+        <item>Gmail Go</item>
+        <item>MS Outlook</item>
+        <item>Samsung Email</item>
+        <item>Yahoo Mail</item>
+        <item>Yahoo Mail Go</item>
+    </string-array>
+</resources>

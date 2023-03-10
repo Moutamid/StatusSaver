@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "410276886126",
+    "firebase_url": "https://status-saver-6f7b9.firebaseio.com",
+    "project_id": "status-saver-6f7b9",
+    "storage_bucket": "status-saver-6f7b9.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:410276886126:android:00072dfb2f70942571987f",
+        "android_client_info": {
+          "package_name": "com.grapplications.statussaver"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "410276886126-kl5pd4drshk85b874jv01i24ekfi88rf.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA7EuTBtIjeyTcxmg3pCVLLe35H3gwwNJg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "410276886126-kl5pd4drshk85b874jv01i24ekfi88rf.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
